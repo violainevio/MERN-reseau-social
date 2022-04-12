@@ -262,7 +262,20 @@
           }
 
           span {
-            transform: translateX(6px);
+            transform: translate(6px, 3px);
+            cursor: pointer;
+
+            img {
+              // padding: 5px;
+              transition: 0.15s;
+              box-shadow: none;
+              height: 16px;
+              width: 16px;
+
+              &:hover {
+                transform: scale(1.2) translate(0px, 0px);
+              }
+            }
           }
         }
 

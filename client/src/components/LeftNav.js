@@ -8,7 +8,6 @@ const LeftNav = () => {
         <div className="icons-bis">
           <NavLink
             to="/"
-            exact
             className={({ isActive }) => (isActive ? "active-left-nav" : "")}
           >
             <img src="./img/icons/home.svg" alt="home" />
@@ -16,7 +15,6 @@ const LeftNav = () => {
           <br />
           <NavLink
             to="/trending"
-            exact
             className={({ isActive }) => (isActive ? "active-left-nav" : "")}
           >
             <img src="./img/icons/rocket.svg" alt="trending" />
@@ -24,7 +22,6 @@ const LeftNav = () => {
           <br />
           <NavLink
             to="/profil"
-            exact
             className={({ isActive }) => (isActive ? "active-left-nav" : "")}
           >
             <img src="./img/icons/user.svg" alt="profil" />
