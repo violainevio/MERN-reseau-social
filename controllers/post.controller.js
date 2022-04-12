@@ -1,4 +1,3 @@
-const postModel = require("../models/post.model");
 const PostModel = require("../models/post.model");
 const UserModel = require("../models/user.model");
 const fs = require("fs");
@@ -6,7 +5,7 @@ const { uploadErrors } = require("../utils/errors.utils");
 const ObjectId = require("mongoose").Types.ObjectId;
 
 module.exports.readPost = (req, res) => {
-  PostModel.find((err, docs), () => {
+  PostModel.find((err, docs) => {
     if (!err) res.send(docs);
     else console.log("Error to get data : " + err);
   }).sort({ createdAt: -1 });
