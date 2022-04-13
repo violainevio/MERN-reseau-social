@@ -37,4 +37,6 @@ module.exports.uploadErrors = (err) => {
 
   if (err.message.includes("max size"))
     errors.format = "Le fichier dépasse 500 ko";
+
+  return errors;
 };
